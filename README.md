@@ -1,89 +1,119 @@
-# Project 1 - Running wordpress in AWS
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+
+# Moving a WordPress-based application from on-premise to a cloud-hosted solution
+
+<!-- TABLE OF CONTENTS -->
+## Table of Contents
+
+* [About the Project](#about-the-project)
+  * [Solution Diagram](#solution-diagram)
+  * [Technologies](#technologies)
+* [Getting Started](#getting-started)
+  * [Prerequisites](#prerequisites)
+  * [Installation](#installation)
+* [Usage](#usage)
+* [Roadmap](#roadmap)
+* [Contributing](#contributing)
+* [License](#license)
+* [Contact](#contact)
 
 
-## Description
-A company in Australia currently have a web application running on a Linux virtual machine.
-The application is being used by hundreds of customers every day and it is based on Wordpress which uses LAMP stack (Linux, Apache, MySQL and PHP) to offer great products.
+## About The Project
+This project aims to move a web application from on-premise to a cloud-hosted solution.
 
-Currently the solution is hosted in a single server (application and database) and deployments are made through FTP transfers to the server.
+Currently, the WordPress-based application uses LAMP stack (Linux, Apache, MySQL, and PHP) and the solution is hosted in a single server (application and database) where the deployments are made through FTP transfers to the server.
 
-The CEO is worried that a traffic peak may bring down the website and decided to migrate to AWS. Your team was contracted to perform this migration (congrats!).
+This cloud migration is designed to comply with the following requirements:
 
-<p style="text-align: center;">
-  <img src="https://www.themely.com/wp-content/uploads/2018/12/MySQL-WebServer-1.jpg"/>
-</p>
-<p style="text-align: center;">
-  1. Wordpress simple flow [1]
-</p>
-
-## Task
-### Project Team: 4 people
-
-Your team needs to run a pilot migration to AWS cloud considering the following requirements:
-- Containerize the application using Docker (see Resources section).
-- The application needs to be secure (all data encrypted at rest and in transit)
-- The application needs to be high available.
-- The application needs to support peaks of up to 10 times the average load (scalability).
-- The infrastructure needs to be reproducible and version controlled in case the CEO decides to expand the business to other parts of the world (consider infra as code).
+- The application must be containerized;
+- The application must to be secure (all data encrypted at rest and in transit)
+- The application must to be highly available.
+- The application must to support peaks of up to 10 times the average load (scalability).
+- The infrastructure must to be reproducible and version-controlled in case the CEO decides to expand the business to other parts of the world (consider infra as code).
 - There must be an easy and secure way of developing, with fast feedback  (consider CI/CD practices or at least automation scripts)
 
-Your team will need to present a 10-min demo of the solution + 10 min questions to the board in 4 weeks, they want to see:
-- A solution diagram containing all the components of the solution and explaining the data flow. Expect basic questions about the architecture and technologies chosen.
-- How the developer life will be better? Easy deployments, fast feedback?
-- How will you monitor the health of the system?
-- How the system handle failure of some components?
-- List improvements to be made or features not delivered in this phase
+### Solution Diagram
+![Solution Diagram](images/solution-diagram.png)
 
-## Assumptions
-- As it is a pilot migration to AWS, data migration is out of scope
-- Testers were contracted to develop unit/service/integration tests for this pipeline, so you don't need to write tests but consider including this step in your CI pipeline or automation scripts!
-- Consider the application as stateless for this pilot. In Wordpress some files may be stored locally on the server (e.g. on image upload)
-- For this pilot we are aiming to have as much as possible as code
-- Single Github repo.
+### Technologies
 
-## Grading
-- Planning & team work (planning, agile practices, Pull requests review, Trello board) - 25%
-- Presentation - 10%
-- Documentation (READMEs, solution diagram, etc) - 15%
-- Technical solution working - 50%
+* [Github](https://github.com/)
+* [Terraform](https://www.terraform.io/)
+* [Github actions](https://github.com/features/actions/)
+* [Docker](https://www.docker.com/)
+* [Docker-compose](https://docs.docker.com/compose/)
+* [Amazon Aurora](https://aws.amazon.com/rds/aurora/)
+* [Amazon Elastic Container Service](https://aws.amazon.com/ecs/)
 
 
-## Kick off
-- Project introduction
-- Decide on teams
-- Create channel in Slack with name (project_1_name1_name2_name3)
-- Create Github repo
-- Create `Github project` board and share 
+<!-- GETTING STARTED -->
+## Getting Started
 
-## Resources
-- Source code of the wordpress application (Github)
-- Use Slack channel for communication and questions to teachers
-- Special readings for you:
-  - https://aws.amazon.com/blogs/architecture/wordpress-best-practices-on-aws/
-  - https://medium.com/@beBrllnt/from-30-minutes-to-10-seconds-automating-wordpress-setup-5ff7526942c0
+TBC
+
+### Prerequisites
+
+TBC
+* tbc
+```sh
+TBC
+```
+
+### Installation
+
+TBC
+
+<!-- USAGE EXAMPLES -->
+## Usage
+
+TBC
+
+<!-- ROADMAP -->
+## Roadmap
+
+See the [open issues](https://github.com/devopsacademyau/2020-jun-project1-group1/issues) for a list of proposed features (and known issues).
 
 
-## Suggested technologies:
-- VCS → Github
-- Infra as Code → Terraform
-- Pipeline tool → Github actions
-- Containerization → Docker / Docker-compose
-- Relational Database → RDS MySQL
-- Container orchestrator → ECS
 
-## Suggested timeline:
-- Week 0:
-  - Breakdown Stories (planning) in Trello and start working
-- Week 1:
-  - Containerize application using Docker
-  - Start CI pipeline / automation scripts
-- Week 2 (class 5):
-  - Infrastructure as code working
-- Week 3:
-  - Application deployed to AWS using pipeline/scripts successfully
-  - Start presentation material and refine documentation (double check if you're attending all requirements)
-- Week 4 (class 6):
-  - Presentation (demo)
+<!-- CONTRIBUTING -->
+## Contributing
 
-## Credits: 
-[1] https://www.themely.com/how-to-fix-error-establishing-a-database-connection-in-wordpress/mysql-webserver-1/
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b <branch-name>`)
+3. Commit your Changes (`git commit -m 'Add a new contribution'`)
+4. Push to the Branch (`git push origin <branch-name>`)
+5. Open a Pull Request
+
+
+
+<!-- LICENSE -->
+## License
+
+Distributed under the Creative Commons Public Licenses. See `LICENSE` for more information.
+
+
+
+<!-- CONTACT -->
+## Contact
+
+TBC
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/devopsacademyau/2020-jun-project1-group1?style=flat-square
+[contributors-url]: https://github.com/devopsacademyau/2020-jun-project1-group1/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/devopsacademyau/2020-jun-project1-group1.svg?style=flat-square
+[forks-url]: https://github.com/devopsacademyau/2020-jun-project1-group1/network/members
+[stars-shield]: https://img.shields.io/github/stars/devopsacademyau/2020-jun-project1-group1.svg?style=flat-square
+[stars-url]: https://github.com/devopsacademyau/2020-jun-project1-group1/stargazers
+[issues-shield]: https://img.shields.io/github/issues/devopsacademyau/2020-jun-project1-group1.svg?style=flat-square
+[issues-url]: https://github.com/devopsacademyau/2020-jun-project1-group1/issues
+[license-shield]: https://img.shields.io/github/license/devopsacademyau/2020-jun-project1-group1.svg?style=flat-square
+[license-url]: https://github.com/devopsacademyau/2020-jun-project1-group1/blob/master/LICENSE
+
