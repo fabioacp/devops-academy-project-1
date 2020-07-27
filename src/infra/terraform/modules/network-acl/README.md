@@ -12,13 +12,12 @@ No requirements.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| name | Prefix name for the resources | `any` | n/a | yes |
-| tags | Tags to attach to resources | `map(string)` | `{}` | no |
+| access\_level | n/a | `string` | n/a | yes |
+| name | n/a | `string` | n/a | yes |
+| subnet\_ids | n/a | `list(string)` | n/a | yes |
 | vpc\_id | n/a | `string` | n/a | yes |
 
 ## Outputs
 
-| Name | Description |
-|------|-------------|
-| internet\_gateway\_id | n/a |
+No output.
 

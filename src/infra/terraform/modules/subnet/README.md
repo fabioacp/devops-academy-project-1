@@ -12,16 +12,18 @@ No requirements.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| dns\_host\_names | n/a | `bool` | `true` | no |
-| dns\_support | n/a | `bool` | `true` | no |
-| instance\_tenancy | defult or dedicated | `list(string)` | <pre>[<br>  "default",<br>  "dedicated"<br>]</pre> | no |
+| availability\_zone | n/a | `string` | n/a | yes |
+| map\_public\_ip | n/a | `bool` | `false` | no |
 | name | n/a | `string` | n/a | yes |
+| submnet\_name\_suffix | n/a | `string` | n/a | yes |
+| subnet\_cidr | n/a | `string` | `"192.168.1.0/24"` | no |
+| tag\_tier | n/a | `string` | n/a | yes |
 | tags | Extra tags to attach to resources | `map(string)` | `{}` | no |
-| vpc\_cidr | VPC network | `string` | `"192.168.0.0/16"` | no |
+| vpc\_id | n/a | `string` | n/a | yes |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| vpc\_id | n/a |
+| subnet\_id | n/a |
 
